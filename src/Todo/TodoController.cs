@@ -8,7 +8,7 @@ namespace SimpleTodoManager
 
             app.MapGet("/listTodos/All", ListAllTodos);
             app.MapGet("/listTodos/byStatus", ListByStatus);
-            app.MapPost("/listTodos/byDate", ListByDate);
+            app.MapGet("/listTodos/byDate", ListByDate);
             app.MapPost("/createTodo", CreateTodo);
             app.MapPut("/updateTodo", UpdateTodo);
             app.MapDelete("/deleteTodo", DeleteTodo);
